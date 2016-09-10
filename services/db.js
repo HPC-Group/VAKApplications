@@ -2,7 +2,15 @@
  * Created by my on 11.07.16.
  */
 
-var config = require('./config');
+var config;
+
+if (process.env.NODE_ENV === 'production') {
+    config = require('./config.production');
+
+}  else {
+    config = require('./config');
+}
+
 var endpoint = config.couchbase.detailed_errors === 1 ? config.couchbase.endpoint + '?detailed_errcodes=1' : config.couchbase.endpoint;
 var bucket = config.couchbase.bucket;
 
@@ -11,7 +19,6 @@ var N1QL = require('couchbase').N1qlQuery;
 
 var cluster = new couchbase.Cluster(endpoint);
 var db = cluster.openBucket(bucket);
-
 
 function query(sql, done) {
     // Setup Query
