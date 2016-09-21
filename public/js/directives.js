@@ -2,7 +2,7 @@
  * Created by my on 12.07.16.
  */
 
-angular.module('VAK.directives', [])
+angular.module('vak.directives', [])
     .directive('vakToDate', {
         restrict: 'EA',
         link: function link (scope, elem, attr) {

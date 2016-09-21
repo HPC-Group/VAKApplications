@@ -1,4 +1,4 @@
-This is the first and fast iteration of the VAKStateKitAnalytics client.
+This is the first and fast iteration of the VisAnalyticsKit client.
 It's far from perfect and needs some refactoring in the future.
 
 It uses industry standard libraries and frameworks like [Angular.js (v1.*)](https://angularjs.org/), 
