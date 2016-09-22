@@ -28,9 +28,9 @@ function query(queryString, done) {
 module.exports.findAllApps = function (done) {
     'use strict';
 
-    var queryString = `SELECT ${appNameKey} FROM ${bucket}`+
+    var queryString = `SELECT "${appNameKey}" FROM ${bucket}`+
         ` WHERE type = "session"` +
-        ` GROUP BY ${appNameKey}`;
+        ` GROUP BY "${appNameKey}"`;
 
     return query(queryString, done);
 };
