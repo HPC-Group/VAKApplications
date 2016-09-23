@@ -7,6 +7,7 @@ var model = require('../../model/repository');
 function returnResponse(err, results, res) {
     'use strict';
     if (err) {
+        console.log('Error: ', JSON.stringifiy(err));
         res.status = 400;
         res.send(err);
         return;

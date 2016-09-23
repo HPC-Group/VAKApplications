@@ -35,7 +35,7 @@ function query(sql, done) {
     // Issue Query
     db.query(query,function(err, result){
         if (err) {
-            console.log(`ERROR: ${err}`);
+            console.log('ERROR: ', JSON.stringify(err));
             done(err, null);
 
             return;

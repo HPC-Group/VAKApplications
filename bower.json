@@ -1,10 +1,8 @@
 {
-  "name": "VAKClient",
+  "name": "vak_application",
   "description": "p-o-f VAK server",
   "main": "",
-  "authors": [
-    "Andy Ruck <mychiara@gmail.com>"
-  ],
+  "authors": [],
   "license": "MIT",
   "keywords": [
     "vis",
