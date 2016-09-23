@@ -49,5 +49,12 @@ This behavior is okay for development. For a production or staging env we should
 ```bash
 # start the server
 
-node /bin/www
+cd /path/to/application
+
+node ./bin/www 
+
+// or 
+
+npm start
+
 ```
