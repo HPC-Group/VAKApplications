@@ -30,15 +30,6 @@
             <span class="value">{{ details.activeSession.statesCount }}</span>
         </li>
 
-        <li class="list-group-item session-details__prov">
-            <span class="VAK__toggle" ng-click="details.showProv =!details.showProv">
-                Provenance <i class="fa" ng-class="{'fa-caret-right':!details.showProv, 'fa-caret-down': details.showProv}"></i>
-            </span>
-            <div class="session-details__prov-toggle" ng-show="details.showProv">
-                <pre pretty-json="details.provJSON"></pre>
-            </div>
-        </li>
-
         <!--<li class="list-group-item session-details__prov">-->
 
             <!--<div class="clearfix">-->

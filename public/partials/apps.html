@@ -1,5 +1,5 @@
 <h3>Apps</h3>
-<div>
+<div ng-show="apps.apps">
     <ul class="list-group">
         <li class="list-group-item" ng-repeat="(key, obj) in apps.apps track by $index">
             <a ui-sref="sessions({ app: obj.client_name })">
@@ -7,4 +7,7 @@
             </a>
         </li>
     </ul>
+</div>
+<div class="alert alert-info" ng-show="!apps.apps">
+  There are currently no apps to show.
 </div>
